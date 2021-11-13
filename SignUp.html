@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="form_style.css">
+         <script defer src="form.js"></script>
+    </head>
+
+	<body>
+        <div class="container">
+            <div class="header">
+                <h2>Create Account</h2>
+            </div>
+            <form class="form" id="form">
+
+                <div class="form-control">
+                    <!-- <label >Username</label> -->
+                    <input type="text" placeholder="Your full name" id="username">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <!-- <label >Email</label> -->
+                    <input type="email" placeholder="abcd@gmail.com" id="email">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <!-- <label >Phone number</label> -->
+                    <input type="tel" placeholder="10-digit Phone number" id="phone">
+                    <p id="password_specification">Number should be in any of these formats : xxxxxxxxxx or xxx-xxx-xxxx or xxx xxx xxxx or xxx.xxx.xxxx</p>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <!-- <label >Password</label> -->
+                    <input type="password" placeholder="Password" id="password">
+                    <p id="password_specification">Minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter, 1 special character and 1 number</p>
+                    <p id="message">Password is <span id="strength"></span> </p>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <!-- <label >Password check</label> -->
+                    <input type="password" placeholder="Retype Password" id="password2">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <button>Submit</button>
+            </form>
+        </div>
+
+	</body>
+
+</html>
